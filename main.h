@@ -2,7 +2,7 @@
 #include "nwpdlg.h"
 
 class sin_dialog : public vsite::nwp::dialog {
- public:
+public:
   sin_dialog(tstring legend, double interval) : legend_(legend), interval_(interval) {}
   tstring get_legend_text() const { return legend_; }
   double get_interval() const { return interval_; }
@@ -22,6 +22,6 @@ protected:
 	void on_destroy() override;
 
 private:
-	tstring legend_ = L"Interval";
+	tstring legend_;
 	double interval_ = 9.;
 };
