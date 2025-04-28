@@ -1,6 +1,7 @@
 #include "nwpwin.h"
 #include "nwpdlg.h"
 
+
 class sin_dialog : public vsite::nwp::dialog {
 public:
   sin_dialog(tstring legend, double interval) : legend_(legend), interval_(interval) {}
@@ -23,5 +24,5 @@ protected:
 
 private:
 	tstring legend_;
-	double interval_ = 9.;
+	double interval_ = 3.14;
 };
